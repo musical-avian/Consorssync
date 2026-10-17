@@ -1,0 +1,11 @@
+# Quadlet unit: copy to ~/.config/containers/systemd/
+[Unit]
+Description=Consorsbank -> Actual Budget sync
+
+[Container]
+Image=localhost/consorssync:latest
+EnvironmentFile=%h/.config/consorssync.env
+Volume=consorssync-data:/data:U
+
+[Service]
+Type=oneshot

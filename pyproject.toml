@@ -1,0 +1,25 @@
+[project]
+name = "consorssync"
+version = "0.1.0"
+description = "Batch sync Consorsbank (FinTS) -> Actual Budget"
+requires-python = ">=3.12"
+dependencies = ["fints>=5,<6", "actualpy>=0.22,<1", "pydantic-settings>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+consorssync = "consorssync.__main__:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["consorssync"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

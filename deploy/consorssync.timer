@@ -1,0 +1,10 @@
+# Copy to ~/.config/systemd/user/
+[Unit]
+Description=Daily Consorsbank -> Actual sync
+
+[Timer]
+OnCalendar=*-*-* 06:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
