@@ -7,4 +7,4 @@ podman build -t consorssync .
 podman run -it --rm --env-file .env -v consorssync-data:/data:U consorssync --dry-run
 ```
 
-Docs: [setup](docs/setup.md) · [TAN](docs/tan.md) · [podman](docs/podman.md)
+Docs: [setup](docs/setup.md) · [TAN](docs/tan.md) · [podman](docs/podman.md) · [hosted Actual](docs/hosted.md) · [risks & limits](docs/risks.md)

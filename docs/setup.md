@@ -6,6 +6,8 @@
 3. `cp .env.example .env`, fill it in, `chmod 600 .env`.
 4. First run is interactive (TAN), see [tan.md](tan.md). Then schedule it, see [podman.md](podman.md).
 
+Hosted Actual: [hosted.md](hosted.md). Read [risks.md](risks.md) before the first run.
+
 ## Config (env vars, prefix `CONSORSSYNC_`)
 | Var | Meaning |
 |---|---|
